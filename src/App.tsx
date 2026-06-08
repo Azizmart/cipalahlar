@@ -52,32 +52,32 @@ const STATS_DATA: { value: string; unit: string; label: string; type: "number" |
 const GALLERY_ITEMS = [
   {
     type: "image" as const,
-    src: "/images/hero-wide.jpg",
-    thumb: "/images/hero-wide.jpg",
+    src: "/images/hero-wide.webp",
+    thumb: "/images/hero-wide.webp",
     alt: "Lanskap perkebunan Albasia Aziz Estate di Desa Harumandala",
     title: "Hamparan Lahan Pangandaran",
     desc: "Lahan produktif 12.000 m² dengan tata letak penanaman presisi",
   },
   {
     type: "image" as const,
-    src: "/images/albasia-trees.jpg",
-    thumb: "/images/albasia-trees.jpg",
+    src: "/images/azizestate-harumandala.webp",
+    thumb: "/images/azizestate-harumandala.webp",
     alt: "Pohon Albasia tumbuh tegak lurus di Aziz Estate",
     title: "Tegakan Pohon Albasia",
     desc: "Pohon cepat tumbuh dengan kualitas kayu unggulan bernilai tinggi",
   },
   {
     type: "image" as const,
-    src: "/images/tumpang-sari.jpg",
-    thumb: "/images/tumpang-sari.jpg",
+    src: "/images/azizestate-blok-curug-ninirea.webp",
+    thumb: "/images/azizestate-blok-curug-ninirea.webp",
     alt: "Sistem tumpang sari di sela pohon Albasia",
     title: "Optimalisasi Tumpang Sari",
     desc: "Hortikultura dan tanaman pangan memberi hasil panen sela rutin",
   },
   {
     type: "image" as const,
-    src: "/images/hero-plantation.jpg",
-    thumb: "/images/hero-plantation.jpg",
+    src: "/images/harumandala-azizestate.webp",
+    thumb: "/images/harumandala-azizestate.webp",
     alt: "Proses pengolahan lahan di Aziz Estate Pangandaran",
     title: "Pengolahan Tanah Subur",
     desc: "Perawatan berkala menjaga struktur hara tanah tetap prima",
@@ -308,7 +308,7 @@ function HeroSection() {
     <section id="beranda" aria-label="Beranda — Aziz Estate" className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#0a0a09]">
       {/* Background with Albasia & Ambient Glow */}
       <div className="absolute inset-0 z-0">
-        <img src="/images/hero-wide.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover opacity-45 scale-105 transform transition-transform duration-10000" />
+        <img src="/images/hero-wide.webp" alt="" aria-hidden="true" className="h-full w-full object-cover opacity-45 scale-105 transform transition-transform duration-10000" />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a09]/95 via-[#0a0a09]/75 to-[#0a0a09]/30" />
         {/* Animated ambient radial glows */}
         <div className="absolute -right-32 top-10 h-[600px] w-[600px] rounded-full bg-emerald-500/[0.05] blur-[140px] animate-pulse-glow" />
@@ -526,7 +526,7 @@ function TentangSection() {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="group overflow-hidden rounded-3xl shadow-xl shadow-stone-900/10 aspect-[3/4]">
                 <img
-                  src="/images/albasia-trees.jpg"
+                  src="/images/azizestate-harumandala.webp"
                   alt="Barisan pohon Albasia di perkebunan Aziz Estate Pangandaran"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
@@ -534,7 +534,7 @@ function TentangSection() {
               <div className="flex flex-col gap-3 sm:gap-4">
                 <div className="group overflow-hidden rounded-3xl shadow-xl shadow-stone-900/10 aspect-square">
                   <img
-                    src="/images/tumpang-sari.jpg"
+                    src="/images/azizestate-blok-curug-ninirea.webp"
                     alt="Sistem tumpang sari subur di Aziz Estate"
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
@@ -617,7 +617,7 @@ function TumpangSariSection() {
             <div className="relative">
               <div className="overflow-hidden rounded-3xl shadow-2xl shadow-stone-900/15 aspect-[4/5]">
                 <img
-                  src="/images/tumpang-sari.jpg"
+                  src="/images/azizestate-blok-curug-ninirea.webp"
                   alt="Sistem tumpang sari terpadu di sela pohon Albasia"
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
                 />
@@ -752,7 +752,7 @@ function GaleriSection() {
                       onClick={() => setActiveYoutube(item.videoId)}
                       className="group relative aspect-video w-full overflow-hidden bg-stone-900 focus:outline-none"
                     >
-                      <img src="/images/hero-wide.jpg" alt={item.title} className="h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" />
+                      <img src="/images/hero-wide.webp" alt={item.title} className="h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-600 text-white shadow-2xl transition-transform duration-300 group-hover:scale-125 text-2xl">
                           ▶
